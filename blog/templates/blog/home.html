@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="posts">
+    <div></div>
+    <div class="mainone">
+        
+        <div class="postone">
+            <div class="storyboxone stbox">
+                <a class="titlemob" href="{% url 'blog-storyone' %}"><h3>Kenya One</h3></a>
+                <a class="postsummary" href="blog-storyone"><p>The president of kenya is william Ruto</p></a>
+            </div>
+            <div class="storyimage">
+                
+                <a href="blog-storyone"><img src="{% static 'img/imageone.jpg' %}" alt="Loading Image"></a>
+               
+                <a class="postsummary" href="blog-storyone"><p class="caption">This is the picture</p></a>
+            </div>
+        </div>
+       
+    </div>
+    <div></div>
+</div>
+{% endblock content %}
